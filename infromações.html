@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ITW 2021/22 - Fórmula 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="myCSS.css" />
+    <link href="dropdown.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./jquery-ui/jquery-ui.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Codystar:300&display=swap");
+        .no_error {display: none;}
+        .error {display: inline-block;}
+    </style>
+  
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="https://logodownload.org/wp-content/uploads/2016/11/formula-1-logo-7.png" width="70" height="32" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-white"><i class="fa fa-home"></i> Ínicio</a></li>
+                    <li class="nav-item"><a href="drivers.html" class="nav-link px-2 text-white"><i class="fa fa-drivers-license"></i> Pilotos</a></li>
+                    <li class="nav-item"><a href="constructors.html" class="nav-link px-2 text-white"><i class="fa fa-tachometer"></i> Construtores</a></li>
+                    <li class="nav-item"><a href="circuits.html" class="nav-link px-2 text-white"><i class="fa fa-map-signs"></i> Circuitos</a></li>
+                    <li class="nav-item"><a href="races.html" class="nav-link px-2 text-white"><i class="fa fa-road"></i> Corridas</a></li>
+                    <li class="nav-item"><a href="Countries.html" class="nav-link px-2 text-white"><i class="fa fa-globe"></i> Países</a></li>
+                    <li class="nav-item"><a href="temporadas.html" class="nav-link px-2 text-white"><i class="fa fa-calendar"></i> Temporadas</a></li>
+                    <li class="nav-item"><div class="dropdown">
+                        <button style="height: 40px" class="dropbtn text-white"><i class="fa fa-bar-chart"></i> Estatísticas</button>
+                            <div class="dropdown-content">
+                                <a href="Statistics.html">Estatística por Piloto</a>
+                                <a href="champion.html">Campeões por Temporada</a>
+                            </div>
+                      </div>
+                    </li>
+                    
+                </ul>
+                
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="Favorittos.html" class="nav-link px-2 text-white"><i class="fa fa-heart"></i></a></li>
+                    <li class="nav-item" style="margin-right: 10px"><a href="infromações.html" class="nav-link px-2 text-secondary"><i class="fa fa-info-circle"></i></a></li>
+                    
+                </ul>
+               
+               
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-1 col-12" id="searchbar" name="searchbar" type="text"
+                           placeholder="Pesquisar" autocomplete="off">
+                </form>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row container">
+            <div class="neons col-12" style="margin-top: 10rem;">
+                <h1><em style=" font-family: 'Codystar';">- Sobre nós -</em></h1>
+            </div>
+        </div>
+        <div class="row neons">
+            <div style=" margin-top:100px;">
+                <h1><a href="#accordionExample"><i class="fa fa-angle-double-down" style="color:white"></i></a></h1>
+            </div>
+        </div>
+       
+        <div class="accordion" id="accordionExample" style="margin-top: 250px; margin-bottom:200px">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Projeto
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body" style="text-align: center;">
+                        <p>Pretende-se com este trabalho prático, aplicar as diversas aprendizagens obtidas ao longo do semestre.</p> 
+                        <p>Para tal, desenvolveu-se um site com o tópico "Fórmula 1".</p> 
+                        <p>Relembrando que este site é <i>um mero modelo</i>, desenvolvido como trabalho final à cadeira de ITW orientada pelo Prof. Joaquim Sousa Pinto.</p>
+                        <p><strong> Para aceder ao site oficial da Fórmula 1, <a href="https://www.formula1.com" class="text-decoration-none text-muted">clique aqui</a></strong>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Grupo
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body" style="text-align: center;">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <strong>Roberto Castro</strong>
+                                <p><a href="mailto:robertorcastro@ua.pt" class="text-decoration-none text-muted">robertocastro@ua.pt</a></p>
+                              
+                                
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                             <strong>Tiago Gomes</strong>
+                             <p><a href="mailto:tiagocgomes@ua.pt" class="text-decoration-none text-muted">tiagocgomes@ua.pt</a></p>
+                         </div>
+                            
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Suporte
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse row" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row justify-content-center container" style="font-weight: bold;">Se tiver alguma dúvida, pergunta ou sugestão contacte-nos! Vamos ter todo o gosto em ajudá-lo!</div>
+                        <div class="row " style="margin-top:15px;">
+                            <form name="Concerto" action="http://192.168.160.36/FormEcho.aspx" method="POST">
+                                <div class="container ">
+                                    <fieldset class="d-grid justify-content-center">
+                                        <fieldset class="grupo">
+                                            <div class="row campo" style="font-weight: bold; ">
+                                                <div class="form-group col-lg-6 col-sm-12" style="margin-top: 25px;">
+                                                    <input type="text" class="form-control" id="nome" name="nome" style="height: 40px; width: 20em" placeholder="Nome">
+                                                    <div class="no_error form-control-static alert alert-danger" id="alert_nome" role="alert"><i class="fa fa-exclamation-triangle"></i> O seu nome não pode ter menos de 5 letras!</div>
+                                                </div>
+                                                <div class="form-group col-lg-6 col-sm-12" style="margin-top: 25px;">
+                                                    <input type="text" for="apelido" class="form-control" id="apelido" name="apelido" style="height: 40px; width: 20em" placeholder="Apelido">
+                                                    <div class="no_error form-control-static alert alert-danger" id="alert_apelido" role="alert"><i class="fa fa-exclamation-triangle"></i> O seu apelido não pode ter menos de 3 letras!</div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <div class="row campo" style="font-weight: bold;">
+                                            <div class="form-group col-lg-6 col-sm-12" style="margin-top: 25px;">
+                                                <input type="email" class="form-control" id="email" name="email" style="height: 40px; width: 20em" value="" placeholder="E-Mail">
+                                                <div class="no_error form-control-static alert alert-danger" id="alert_email" role="alert"><i class="fa fa-exclamation-triangle"> </i> <span id="alert_email_text">Alerta email</span></div>
+                                            </div>
+                                            <div class="form-group col-lg-6 col-sm-12" style="margin-top: 25px;">
+                                                <input type="text" class="form-control" id="telefone" name="telefone" style="height: 40px; width: 20em" value="" placeholder="Nº de Telemóvel/Telefone">
+                                                <div class="no_error form-control-static alert alert-danger" id="alert_telf" role="alert"><i class="fa fa-exclamation-triangle"></i> O seu número tem de ter 9 números!</div> 
+                                            </div> 
+                                        </div>
+                                        <div class="row campo" style="font-weight: bold; margin-top: 25px;">
+                                            <div class="form-group col-lg-12">
+                                                <textarea class="form-control" type="text" id="mensagem" name="mensagem" style="height: 200px; width: 100%;" value="" placeholder="Mensagem"></textarea> 
+                                                <div class="no_error form-control-static alert alert-danger" id="alert_mensagem" role="alert"><i class="fa fa-exclamation-triangle"></i> A morada tem de ter entre 20 e 200 caracteres!</div>
+                                            </div> 
+                                        </div>
+                                        <div class="row " style="margin-top: 25px;">
+                                            <div class="col-6 d-grid justify-content-end"><button class="reset btn btn-danger " type="reset" name="limpar" style="width: 100px; margin-right: 20px;">Limpar</button></div>
+                                            <div class="col-6"><button class="sumbit btn btn-danger" type="submit" id="submit" style="width: 100px; margin-left: 20px;">Enviar</button></div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                        Departamento
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                       <h4><strong>DETI - Departamento de Electrónica, Telecomunicações e Informática</strong></h4>
+                        <p><b>Localizado em:</b> Universidade de Aveiro<br><b>Endereço:</b> 3810-193 Aveiro<br><b>Telefone:</b> 234 370 355
+                        <br> Para mais informações, <a href="https://www.ua.pt/pt/deti/" class="text-decoration-none text-muted">clique aqui</a>.</p>
+                        <iframe style="width:100%; height: 500px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="border: 1px solid black"
+                        src="https://www.google.com/maps/embed/v1/view?key=AIzaSyAJLUALI140YZxYaSh3TN8hedXJEsm+1Bkg&center=40.633181,-8.6595&zoom=17&maptype=satellite"
+                        allowfullscreen >
+                            
+                        </iframe>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+        <nav class="navbar navbar-dark bg-dark text-white fixed-bottom">
+            <div class="container small">
+                <div class="navbar-text small">&copy;  Introdução as Tecnologias Web - 2021/22</div>
+                <div class="navbar-text small d-none d-md-none d-lg-block">Made with <i class="fa fa-heart-o text-danger"></i> por <a href="mailto:robertorcastro@ua.pt" class="text-decoration-none text-muted">Roberto</a> e <a href="mailto:tiagocgomes@ua.pt" class="text-decoration-none text-muted">Tiago</a>.</div>
+                <div class="navbar-nav small d-none d-md-block">
+                    <div class="nav-item text-end"><a href="https://www.ua.pt" class="nav-link">Universidade de Aveiro</a></div>
+                </div>
+            </div>
+        </nav>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+                crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"
+            integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA="
+            crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function () {
+
+                const api_url = "http://192.168.160.58/Formula1/api/Search/All";
+
+                $("#searchbar").autocomplete({
+                    minLength: 2,
+                    source: function (request, response) {
+                        $.ajax({
+                            type: "GET",
+                            url: api_url,
+                            data: {
+                                q: $('#searchbar').val().toLowerCase()
+                            },
+                            success: function (data) {
+                                if (!data.length) {
+                                    var result = [{
+                                        label: 'Sem resultados',
+                                        value: response.term,
+                                        source: ""
+                                    }];
+                                    response(result);
+                                } else {
+
+                                    var nData = $.map(data, function (value, key) {
+                                        return {
+                                            label: value.Text,
+                                            value: value.Id,
+                                            source: value.Source
+                                        }
+                                    });
+                                    results = $.ui.autocomplete.filter(nData, request.term);
+                                    response(results);
+                                }
+                            },
+                            error: function () {
+                                alert("error!");
+                            }
+                        })
+                    },
+                    select: function (event, ui) {
+                        event.preventDefault();
+                        $("#searchbar").val(ui.item.label);
+
+                        switch (ui.item.source) {
+                            case "Race":
+                                window.location.href = "./raceDetails.html?id=" + ui.item.value;
+                                break;
+                            case "Constructor":
+                                window.location.href = "./constructorDetails.html?id=" + ui.item.value;
+                                break;
+                            case "Driver":
+                                window.location.href = "./driverDetails.html?id=" + ui.item.value;
+                                break;
+                            case "Circuit":
+                                window.location.href = "./circuitDetails.html?id=" + ui.item.value;
+                                break;
+                            default:
+                                break;
+                        }
+                        // h.loadTitleModal(ui.item.value)
+                    },
+                    focus: function (event, ui) {
+                        $("#searchbar").val(ui.item.label);
+                    }
+                });
+            });
+        </script>
+        <script src="informações.js"></script>
+</body>
+</html>
